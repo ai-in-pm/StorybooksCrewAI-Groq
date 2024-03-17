@@ -1,0 +1,14 @@
+Large Language Models list:
+
+Groq:
+llm = ChatOpenAI(
+    openai_api_base="https://api.groq.com/openai/v1", # https://api.openai.com/v1 or https://api.groq.com/openai/v1 
+    openai_api_key=os.getenv("GROQ_API_KEY"), # os.getenv("OPENAI_API_KEY") or os.getenv("GROQ_API_KEY")
+    model_name="mixtral-8x7b-32768" #  gpt-4-turbo-preview or mixtral-8x7b-32768 
+
+Ollama:
+llm = ChatOpenAI(
+    openai_api_base="http://localhost:11434/v1", # https://api.openai.com/v1 or https://api.groq.com/openai/v1 
+    openai_api_key="Null", # os.getenv("OPENAI_API_KEY") or os.getenv("GROQ_API_KEY")
+    model_name="mistral" #  gpt-4-turbo-preview or mixtral-8x7b-32768
+)
